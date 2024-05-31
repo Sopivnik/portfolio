@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Портфолио</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/function.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__menu">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="#major" class="header__link">Главная</a>
+          </li>
+          <li class="header__item">
+            <a href="#aboutme" class="header__link">Обо мне</a>
+          </li>
+          <li class="header__item">
+            <a href="#portfolio" class="header__link">Портфолио</a>
+          </li>
+          <li class="header__item">
+            <a href="#contacts" class="header__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__marketing marketing" id="major">
+        <div class="marketing__container">
+          <h1 class="marketing__name">САЙТ-ПОРТФОЛИО ВЕБ-РАЗРАБОТЧИКА</h1>
+          <h2 class="marketing__p">Сопивник Рада</h2>
+          <p class="marketing__text">WEB-разработчик / HTML-верстальщик</p>
+          <a href="#portfolio" class="marketing__button"
+            >Посмотреть Портфолио</a
+          >
+        </div>
+      </section>
+      <section class="main__aboutme aboutme" id="aboutme">
+        <h2 class="aboutme__title">Обо мне</h2>
+        <div class="aboutme__items">
+          <div class="aboutme__item">
+            <div class="aboutme__image">
+              <img src="image/aboutme_1.jpg" alt="gt" />
+            </div>
+            <p class="aboutme__text">
+              Приветствую! Меня зовут Рада.Я занимаюсь web-разработкой под
+              ключ,с нуля.Выполняю программирование сайтов и верстку! Я люблю
+              изучать новые технологии и создавать код,который работает быстро и
+              эффективно.
+            </p>
+          </div>
+          <div class="aboutme__item">
+            <div class="aboutme__image">
+              <img src="image/aboutme_2.jpg" alt="gt" />
+            </div>
+            <p class="aboutme__text">
+              Знаю языки программирования,такие как: JavaScript. Языки разметки:
+              HTML(5), таблицы стилей CSS(3).
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Блок Профессиональные навыки -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="section-title">Профессиональные навыки</h2>
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="60%" style="max-width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="50%" style="max-width: 50%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="60%" style="max-width: 60%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__information information" id="portfolio">
+        <h2 class="information__title">Портфолио</h2>
+        <div class="information__items">
+          <div class="information__item">
+            <div class="information__image">
+              <img src="image/portfolio_1.jpg" alt="gf" class="light" />
+            </div>
+            <div class="information__text">
+              ВЁРСТКА
+            </div>
+          </div>
+          <div class="information__item">
+            <div class="information__image">
+              <img src="image/portfolio_2.jpg" alt="gf" class="light" />
+            </div>
+            <div class="information__text">
+              САЙТ ПОД КЛЮЧ
+            </div>
+          </div>
+
+      </section>
+      <section class="main__contacts contacts" id="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__text">
+          <p class="contacts__text"></p>
+        </div>
+        <form class="contacts__form">
+          <div class="contacts__row">
+            <input
+              type="text"
+              name="name"
+              class="contacts__name"
+              placeholder="Имя"
+            />
+          </div>
+          <div class="contacts__row">
+            <input
+              type="tel"
+              name="number"
+              class="contacts__number"
+              placeholder="Телефон"
+            />
+          </div>
+          <div class="contacts__row">
+            <input
+              type="email"
+              name="email"
+              class="contacts__email"
+              placeholder="E-mail"
+            />
+          </div>
+          <div class="contacts__row">
+            <label for="note">
+              <textarea
+                name="note"
+                id="note"
+                cols="92"
+                rows="10"
+                class="contacts__note"
+                placeholder="Ваш вопрос"
+              ></textarea>
+            </label>
+          </div>
+          <br />
+          <div class="contacts__row">
+            <button type="submit" class="contacts__button" name="send">
+              Отправить
+            </button>
+          </div>
+        </form>
+        <div class="contacts__image">
+          <img src="image/footer.jpg" alt="m" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footercopyright">&copy; Портфолио Sopivnik Rada, 2024</div>
+      <div class="contacts__contacts">
+        <a href="https://telegram.org/" class="contacts__contact">
+          <img src="image/photo_tg.jpg" alt="Telegram" />
+        </a>
+        <a href="https://vk.com/" class="contacts__contact">
+          <img src="image/photo_vk.jpg" alt="ВКонтакте" />
+        </a>
+      </div>
+    </footer>
+    <a href="#top" id="top" class="top" title="Наверх"> &#9650; </a>
+  </body>
+</html>
